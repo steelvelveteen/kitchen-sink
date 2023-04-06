@@ -5,23 +5,22 @@ FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
 
 # Copy the solution file and restore the dependencies
-COPY ["Bubber.sln", "./"]
-COPY ["Bubber.API/Bubber.API.csproj", "Bubber.API/"]
-COPY ["Bubber.Tests/Bubber.Tests.csproj", "Bubber.Tests/"]
-COPY ["Bubber.Domain/Bubber.Domain.csproj", "Bubber.Domain/"]
-COPY ["Bubber.Infrastructure/Bubber.Infrastructure.csproj", "Bubber.Infrastructure/"]
-COPY ["Bubber.Contracts/Bubber.Contracts.csproj", "Bubber.Contracts/"]
-COPY ["Bubber.Application/Bubber.Application.csproj", "Bubber.Application/"]
-RUN dotnet restore "Bubber.sln"
+COPY ["Alpha.sln", "./"]
+COPY ["src/Alpha.API/Alpha.API.csproj", "src/Alpha.API/"]
+COPY ["src/Alpha.Domain/Alpha.Domain.csproj", "src/Alpha.Domain/"]
+COPY ["src/Alpha.Infrastructure/Alpha.Infrastructure.csproj", "src/Alpha.Infrastructure/"]
+COPY ["src/Alpha.Application/Alpha.Application.csproj", "src/Alpha.Application/"]
+COPY ["tests/Alpha.Tests/Alpha.Tests.csproj", "tests/Alpha.Tests/"]
+RUN dotnet restore "Alpha.sln"
 
 # Copy the rest of the source code
 COPY . .
 
 # Build the entire solution
-RUN dotnet build "Bubber.sln" -c Release -o /app/build
+RUN dotnet build "Alpha.sln" -c Release -o /app/build
 
 # Publish the Web API project
-RUN dotnet publish "Bubber.API/Bubber.API.csproj" -c Release -o /app/publish
+RUN dotnet publish "src/Alpha.API/Alpha.API.csproj" -c Release -o /app/publish
 
 # Use the official .NET runtime image as the final stage
 FROM mcr.microsoft.com/dotnet/aspnet:6.0
@@ -37,5 +36,4 @@ EXPOSE 80
 EXPOSE 443
 
 # Set the entrypoint for the application
-ENTRYPOINT ["dotnet", "Bubber.API.dll"]
-
+ENTRYPOINT ["dotnet", "Alpha.API.dll"]

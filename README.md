@@ -1,7 +1,7 @@
 # kitchen-sink
 A compendium of scripts, guides, snippets and everything related to programming.
 
-- Contains batch script that creates a *dotnet* project using the Clean architecture. Run the batch file by double clicking on it inside your repos directory.
+- Contains batch script that creates a *dotnet* project using the Clean architecture. It will add all the dependencies (references) as per the CLEAN architecture. Run the batch file by double clicking on it inside your repos directory.
 - Contains bash script for the exact same purpose. Run the bash script with
 ```bash
 	./solution.sh

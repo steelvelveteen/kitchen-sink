@@ -64,6 +64,7 @@ echo.>README.md
 
 :: Add .gitignore file
 echo.>.gitignore
+git init
 
 :: Docker
 echo.>Dockerfile

@@ -114,6 +114,8 @@
 - Friday: Implementing Reinforcement Learning with OpenAI Gym
   - Resource: [Getting Started with OpenAI Gym](https://gym.openai.com/docs/)
 
+# Month 3
+
 **Week 9: Advanced Topics and Techniques**
 
 - Monday: Generative Adversarial Networks (GANs)

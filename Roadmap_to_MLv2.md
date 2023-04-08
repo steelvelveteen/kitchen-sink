@@ -24,45 +24,60 @@
   - Resource: [Scikit-learn Tutorial](https://scikit-learn.org/stable/tutorial/index.html)
   - Video: [Scikit-learn Tutorial](https://www.youtube.com/watch?v=pqNCD_5r0IU)
 
-**Week 2: Supervised Learning**
+**Week 2: Supervised Learning Techniques**
 
 - Monday: Linear Regression
-  - Resource: [Linear Regression in Python](https://realpython.com/linear-regression-in-python/)
+  - Resource: [Scikit-learn Linear Regression](https://scikit-learn.org/stable/modules/linear_model.html)
+  - Video: [Linear Regression in Python](https://www.youtube.com/watch?v=E5RjzSK0fvY)
 - Tuesday: Logistic Regression
-  - Resource: [Logistic Regression in Python](https://realpython.com/logistic-regression-python/)
-- Wednesday: k-Nearest Neighbors (kNN)
-  - Resource: [kNN in Python](https://towardsdatascience.com/introduction-to-k-nearest-neighbors-3b534bb11c96)
-- Thursday: Decision Trees and Random Forests
-  - Resource: [Decision Trees and Random Forests in Python](https://towardsdatascience.com/decision-trees-and-random-forests-df0c3123f991)
-- Friday: Support Vector Machines (SVM)
-  - Resource: [SVM in Python](https://www.datacamp.com/community/tutorials/svm-classification-scikit-learn-python)
+  - Resource: [Scikit-learn Logistic Regression](https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression)
+  - Video: [Logistic Regression in Python](https://www.youtube.com/watch?v=yIYKR4sgzI8)
+- Wednesday: Decision Trees
+  - Resource: [Scikit-learn Decision Trees](https://scikit-learn.org/stable/modules/tree.html)
+  - Video: [Decision Trees in Python](https://www.youtube.com/watch?v=7VeUPuFGJHk)
+- Thursday: k-Nearest Neighbors
+  - Resource: [Scikit-learn k-Nearest Neighbors](https://scikit-learn.org/stable/modules/neighbors.html)
+  - Video: [k-Nearest Neighbors in Python](https://www.youtube.com/watch?v=6kzU6C-_Gfk)
+- Friday: Support Vector Machines
+  - Resource: [Scikit-learn Support Vector Machines](https://scikit-learn.org/stable/modules/svm.html)
+  - Video: [Support Vector Machines in Python](https://www.youtube.com/watch?v=efR1C6CvhmE)
 
 **Week 3: Unsupervised Learning and Model Evaluation**
 
 - Monday: K-means Clustering
   - Resource: [K-means Clustering in Python](https://towardsdatascience.com/understanding-k-means-clustering-in-machine-learning-6a6e67336aa1)
+  - Video: [K-means Clustering in Python](https://www.youtube.com/watch?v=ikt0sny_ImY)
 - Tuesday: Principal Component Analysis (PCA)
   - Resource: [PCA in Python](https://towardsdatascience.com/pca-using-python-scikit-learn-e653f8989e60)
+  - Video: [Principal Component Analysis in Python](https://www.youtube.com/watch?v=FgakZw6K1QQ)
 - Wednesday: Model evaluation and validation
   - Resource: [Model Evaluation](https://scikit-learn.org/stable/modules/model_evaluation.html)
+  - Video: [Model Evaluation and Validation in Python](https://www.youtube.com/watch?v=O_alAPEh7WY)
 - Thursday: Cross-validation
   - Resource: [Cross-validation in Python](https://towardsdatascience.com/cross-validation-in-machine-learning-72924a69872f)
+  - Video: [Cross-Validation in Python](https://www.youtube.com/watch?v=fSytzGwwBVw)
 - Friday: Grid Search and Hyperparameter Tuning
   - Resource: [Grid Search in Python](https://towardsdatascience.com/grid-search-for-model-tuning-3319b259367e)
+  - Video: [Grid Search and Hyperparameter Tuning in Python](https://www.youtube.com/watch?v=HdlDYng8g9s)
 
 **Week 4: Introduction to Neural Networks and Deep Learning**
 
 - Monday: Introduction to Neural Networks
   - Resource: [Neural Networks Basics](https://www.analyticsvidhya.com/blog/2021/02/neural-networks-basics-explained/)
+  - Video: [Neural Networks Explained](https://www.youtube.com/watch?v=aircAruvnKk)
 - Tuesday: Activation functions
   - Resource: [Activation Functions in Neural Networks](https://towardsdatascience.com/activation-functions-neural-networks-1cbd9f8d91d6)
+  - Video: [Activation Functions in Neural Networks](https://www.youtube.com/watch?v=-7scQpJT7uo)
 - Wednesday: Feedforward and backpropagation
   - Resource: [Backpropagation Explained](https://www.analyticsvidhya.com/blog/2021/06/understanding-backpropagation-and-its-importance-in-deep-learning/)
+  - Video: [Backpropagation Algorithm](https://www.youtube.com/watch?v=Ilg3gGewQ5U)
 - Thursday: Introduction to TensorFlow and Keras
   - Resource: [TensorFlow Basics](https://www.tensorflow.org/tutorials/quickstart/beginner)
   - Resource: [Keras Basics](https://keras.io/guides/)
+  - Video: [TensorFlow 2.0 Tutorial for Beginners](https://www.youtube.com/watch?v=tPYj3fFJGjk)
 - Friday: Implementing a simple Neural Network with TensorFlow and Keras
   - Resource: [Building a Neural Network with TensorFlow and Keras](https://towardsdatascience.com/building-a-deep-learning-model-using-keras-1548ca149d37)
+  - Video: [Deep Learning with Python, TensorFlow, and Keras](https://www.youtube.com/watch?v=wQ8BIBpya2k)
 
 ## Month 2
 
@@ -70,56 +85,77 @@
 
 - Monday: Introduction to CNNs
   - Resource: [Convolutional Neural Networks (CNNs) Explained](https://towardsdatascience.com/a-comprehensive-guide-to-convolutional-neural-networks-the-eli5-way-3bd2b1164a53)
+  - Video: [Convolutional Neural Networks (CNNs) Explained](https://www.youtube.com/watch?v=YRhxdVk_sIs)
 - Tuesday: Layers in a CNN
   - Resource: [Understanding Convolutional Layers](https://towardsdatascience.com/intuitively-understanding-convolutions-for-deep-learning-1f6f42faee1)
+  - Video: [Understanding Convolutional Layers in CNNs](https://www.youtube.com/watch?v=KiftWz544_8)
 - Wednesday: CNN Architectures
   - Resource: [Popular CNN Architectures](https://towardsdatascience.com/illustrated-10-cnn-architectures-95d78ace614d)
+  - Video: [CNN Architectures: LeNet, AlexNet, VGG, GoogLeNet, ResNet](https://www.youtube.com/watch?v=HtG0nZeniSY)
 - Thursday: Implementing a CNN with TensorFlow and Keras
   - Resource: [Building a CNN with TensorFlow and Keras](https://www.tensorflow.org/tutorials/images/cnn)
+  - Video: [Convolutional Neural Networks with TensorFlow and Keras](https://www.youtube.com/watch?v=LhEMXbjGV
 - Friday: Transfer learning
   - Resource: [Transfer Learning in Keras](https://www.tensorflow.org/tutorials/images/transfer_learning)
+  - Video: [Transfer Learning with TensorFlow and Keras](https://www.youtube.com/watch?v=yofjFQddwHE)
 
 **Week 6: Recurrent Neural Networks (RNNs) and Long Short-Term Memory (LSTM)**
 
 - Monday: Introduction to RNNs
   - Resource: [Understanding RNNs](https://towardsdatascience.com/understanding-recurrent-neural-networks-479cd0da9760)
+  - Video: [Recurrent Neural Networks (RNN) and Long Short-Term Memory (LSTM)](https://www.youtube.com/watch?v=WCUNPb-5EYI)
 - Tuesday: Vanishing and Exploding Gradients
   - Resource: [Vanishing and Exploding Gradients](https://towardsdatascience.com/the-vanishing-gradient-problem-69bf08b15484)
+  - Video: [Vanishing Gradient Problem](https://www.youtube.com/watch?v=qhXZsFVxGKo)
 - Wednesday: Introduction to LSTMs
   - Resource: [Understanding LSTMs](https://towardsdatascience.com/understanding-lstm-and-its-quick-implementation-in-keras-for-sentiment-analysis-af410fd85b47)
+  - Video: [LSTM Networks (Understanding LSTMs)](https://www.youtube.com/watch?v=8HyCNIVRbSU)
 - Thursday: Implementing RNNs and LSTMs with TensorFlow and Keras
   - Resource: [Building RNNs and LSTMs with TensorFlow and Keras](https://www.tensorflow.org/guide/keras/rnn)
+  - Video: [Implementing RNN and LSTM with Python, TensorFlow, and Keras](https://www.youtube.com/watch?v=BSpXCRTOLJA)
 - Friday: Sequence-to-sequence models and attention mechanisms
   - Resource: [Seq2Seq Models in TensorFlow](https://www.tensorflow.org/addons/tutorials/networks_seq2seq_nmt)
   - Resource: [Attention Mechanisms](https://towardsdatascience.com/attn-illustrated-attention-5ec4ad276ee3)
+  - Video: [Sequence to Sequence Models and Attention Mechanism](https://www.youtube.com/watch?v=IxQtK2SjWWM)
 
 **Week 7: Natural Language Processing (NLP)**
 
 - Monday: Introduction to NLP
   - Resource: [NLP Basics](https://towardsdatascience.com/your-guide-to-natural-language-processing-nlp-48ea2511f6e1)
+  - Video: [Natural Language Processing (NLP) Basics](https://www.youtube.com/watch?v=5ctbvkAMQO4)
 - Tuesday: Text preprocessing techniques
   - Resource: [Text Preprocessing](https://towardsdatascience.com/nlp-text-preprocessing-a-practical-guide-and-template-d80874676e79)
+  - Video: [Text Preprocessing for NLP](https://www.youtube.com/watch?v=RZYjsw6P4nI)
 - Wednesday: Word embeddings (Word2Vec, GloVe, FastText)
   - Resource: [Word Embeddings](https://towardsdatascience.com/introduction-to-word-embeddings-4cf857b12edc)
+  - Video: [Word Embeddings (Word2Vec, GloVe, FastText)](https://www.youtube.com/watch?v=Eku_pbZ3-Mw)
 - Thursday: Implementing NLP with TensorFlow and Keras
   - Resource: [NLP with TensorFlow and Keras](https://www.tensorflow.org/tutorials/text/text_classification_rnn)
+  - Video: [Text Classification using RNNs | TensorFlow and Keras](https://www.youtube.com/watch?v=OuNH5kT-aD0)
 - Friday: Introduction to Transformer models and BERT
   - Resource: [Transformers Explained](https://towardsdatascience.com/transformers-explained-visually-part-1-overview-of-functionality-95a6dd460674)
   - Resource: [BERT Explained](https://towardsdatascience.com/bert-explained-state-of-the-art-language-model-for-nlp-f8b21a9b6270)
+  - Video: [The Illustrated BERT, ELMo, and co. (How NLP Cracked Transfer Learning)](https://www.youtube.com/watch?v=FKlPCK1uFrc)
 
 **Week 8: Reinforcement Learning (RL)**
 
 - Monday: Introduction to Reinforcement Learning
   - Resource: [Reinforcement Learning Basics](https://towardsdatascience.com/reinforcement-learning-101-e24b50e1d292)
+  - Video: [Reinforcement Learning Crash Course](https://www.youtube.com/watch?v=JgvyzIkgxF0)
 - Tuesday: Markov Decision Processes (MDPs)
   - Resource: [Markov Decision Processes](https://towardsdatascience.com/introduction-to-markov-decision-processes-6c7bb3a3a348)
+  - Video: [Markov Decision Processes (MDPs) - Structuring a Reinforcement Learning Problem](https://www.youtube.com/watch?v=4YU6cqG8Rcs)
 - Wednesday: Q-learning and Deep Q-Networks (DQNs)
   - Resource: [Q-learning](https://towardsdatascience.com/simple-reinforcement-learning-q-learning-fcddc4b6fe56)
   - Resource: [Deep Q-Networks](https://towardsdatascience.com/deep-q-networks-explained-in-simple-terms-8417d2445f37)
+  - Video: [Q-Learning Explained - A Reinforcement Learning Technique](https://www.youtube.com/watch?v=aCEvtRtNO-M)
+  - Video: [Deep Q-Networks (DQNs) - Combining Neural Networks and Q-Learning in Deep Reinforcement Learning](https://www.youtube.com/watch?v=RpHJNClNIRE)
 - Thursday: Policy Gradient Methods
   - Resource: [Policy Gradients](https://towardsdatascience.com/policy-gradients-in-a-nutshell-8b72f9743c5f)
+  - Video: [Policy Gradient Methods - Reinforcement Learning Techniques](https://www.youtube.com/watch?v=KHZVXao4qXs)
 - Friday: Implementing Reinforcement Learning with OpenAI Gym
   - Resource: [Getting Started with OpenAI Gym](https://gym.openai.com/docs/)
+  - Video: [Introduction to OpenAI Gym](https://www.youtube.com/watch?v=2D8Ms3q3IhY)
 
 # Month 3
 

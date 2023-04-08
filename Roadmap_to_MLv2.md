@@ -6,16 +6,23 @@
 
 - Monday: Python basics (variables, data types, loops, conditionals)
   - Resource: [Python Basics](https://www.w3schools.com/python/)
+  - Video: [Learn Python - Full Course for Beginners](https://www.youtube.com/watch?v=_Z1eL3q3ZJY)
 - Tuesday: Functions, modules, and packages
   - Resource: [Functions and Modules](https://realpython.com/python-modules-packages/)
+  - Video: [Python Functions and Modules](https://www.youtube.com/watch?v=9Os0o3wzS_I)
 - Wednesday: Numpy and Pandas basics
   - Resource: [Numpy Tutorial](https://numpy.org/doc/stable/user/quickstart.html)
   - Resource: [Pandas Tutorial](https://pandas.pydata.org/pandas-docs/stable/getting_started/intro_tutorials/index.html)
+  - Video: [NumPy Tutorial](https://www.youtube.com/watch?v=QUT1VHiLmmI)
+  - Video: [Pandas Tutorial](https://www.youtube.com/watch?v=vmEHCJofslg)
 - Thursday: Matplotlib and Seaborn basics
   - Resource: [Matplotlib Tutorial](https://matplotlib.org/stable/tutorials/index.html)
   - Resource: [Seaborn Tutorial](https://seaborn.pydata.org/tutorial.html)
+  - Video: [Matplotlib Tutorial](https://www.youtube.com/watch?v=DAQNHzOcO5A)
+  - Video: [Seaborn Tutorial](https://www.youtube.com/watch?v=6GUZXDef2U0)
 - Friday: Scikit-learn basics
   - Resource: [Scikit-learn Tutorial](https://scikit-learn.org/stable/tutorial/index.html)
+  - Video: [Scikit-learn Tutorial](https://www.youtube.com/watch?v=pqNCD_5r0IU)
 
 **Week 2: Supervised Learning**
 

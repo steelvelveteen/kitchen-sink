@@ -89,8 +89,4 @@ echo.>README.md
 echo.>.gitignore
 git init
 
-:: Docker
-echo.>Dockerfile
-echo.>.dockerignore
-
 echo Done.

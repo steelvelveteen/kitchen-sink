@@ -35,6 +35,14 @@ dotnet sln add src/$API_PROJECT_NAME/$API_PROJECT_NAME.csproj
 dotnet new classlib -n $APPLICATION_PROJECT_NAME -o src/$APPLICATION_PROJECT_NAME
 dotnet sln add src/$APPLICATION_PROJECT_NAME/$APPLICATION_PROJECT_NAME.csproj
 
+# Add relevant directories under Application
+mkdir src/$APPLICATION_PROJECT_NAME/Common
+mkdir src/$APPLICATION_PROJECT_NAME/SampleDomain
+mkdir src/$APPLICATION_PROJECT_NAME/SampleDomain/Commands
+mkdir src/$APPLICATION_PROJECT_NAME/SampleDomain/Queries
+mkdir src/$APPLICATION_PROJECT_NAME/SampleDomain/EventHandlers
+
+
 # Create the infrastructure class library project
 dotnet new classlib -n $INFRASTRUCTURE_PROJECT_NAME -o src/$INFRASTRUCTURE_PROJECT_NAME
 dotnet sln add src/$INFRASTRUCTURE_PROJECT_NAME/$INFRASTRUCTURE_PROJECT_NAME.csproj
@@ -42,7 +50,15 @@ dotnet sln add src/$INFRASTRUCTURE_PROJECT_NAME/$INFRASTRUCTURE_PROJECT_NAME.csp
 # Create the domain class library project
 dotnet new classlib -n $DOMAIN_PROJECT_NAME -o src/$DOMAIN_PROJECT_NAME
 dotnet sln add src/$DOMAIN_PROJECT_NAME/$DOMAIN_PROJECT_NAME.csproj
+
+# Add the relevant directories under Domain
 mkdir src/$DOMAIN_PROJECT_NAME/Entities
+mkdir src/$DOMAIN_PROJECT_NAME/Common
+mkdir src/$DOMAIN_PROJECT_NAME/Enums
+mkdir src/$DOMAIN_PROJECT_NAME/Events
+mkdir src/$DOMAIN_PROJECT_NAME/ValueObjects
+mkdir src/$DOMAIN_PROJECT_NAME/Exceptions
+mkdir src/$DOMAIN_PROJECT_NAME/Events
 
 ## Tests
 # Create the xUnit test project

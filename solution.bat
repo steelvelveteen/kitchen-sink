@@ -32,6 +32,9 @@ dotnet new sln -n %SOLUTION_NAME%
 dotnet new classlib -n %DOMAIN_PROJECT_NAME% -o src/%DOMAIN_PROJECT_NAME%
 dotnet sln add src/%DOMAIN_PROJECT_NAME%\%DOMAIN_PROJECT_NAME%.csproj
 
+:: Add an Entities directory under the Domain project
+md src/%DOMAIN_PROJECT_NAME%/Entities
+
 :: Create the Web API project
 dotnet new webapi -n %API_PROJECT_NAME% -o src/%API_PROJECT_NAME%
 dotnet sln add src/%API_PROJECT_NAME%\%API_PROJECT_NAME%.csproj

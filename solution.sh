@@ -42,6 +42,7 @@ dotnet sln add src/$INFRASTRUCTURE_PROJECT_NAME/$INFRASTRUCTURE_PROJECT_NAME.csp
 # Create the domain class library project
 dotnet new classlib -n $DOMAIN_PROJECT_NAME -o src/$DOMAIN_PROJECT_NAME
 dotnet sln add src/$DOMAIN_PROJECT_NAME/$DOMAIN_PROJECT_NAME.csproj
+mkdir src/$DOMAIN_PROJECT_NAME/Entities
 
 ## Tests
 # Create the xUnit test project

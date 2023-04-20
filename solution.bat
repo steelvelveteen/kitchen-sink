@@ -1,7 +1,7 @@
 @echo off
 
 :: Set solution name
-set SOLUTION_NAME=Alpha
+set SOLUTION_NAME=AlphaIndustries
 
 :: Set project names based on solution name
 set API_PROJECT_NAME=%SOLUTION_NAME%.API
@@ -12,7 +12,7 @@ set APPLICATION_PROJECT_NAME=%SOLUTION_NAME%.Application
 :: Set project tests names based on solution name
 set API_TEST_PROJECT_NAME=%SOLUTION_NAME%.API.Tests
 set DOMAIN_TEST_PROJECT_NAME=%SOLUTION_NAME%.Domain.Tests
-set INFRASTRUCTURE_TEST_PROJECT_NAME=%SOLUTION_NAME%.Infrastucture.Tests
+set INFRASTRUCTURE_TEST_PROJECT_NAME=%SOLUTION_NAME%.Infrastructure.Tests
 set APPLICATION_TEST_PROJECT_NAME=%SOLUTION_NAME%.Application.Tests
 set INTEGRATION_TEST_PROJECT_NAME=%SOLUTION_NAME%.Integration.Tests
 

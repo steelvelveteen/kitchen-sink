@@ -96,7 +96,30 @@ dotnet add tests\%DOMAIN_TEST_PROJECT_NAME%\%DOMAIN_TEST_PROJECT_NAME%.csproj re
 dotnet add tests\%INFRASTRUCTURE_TEST_PROJECT_NAME%\%INFRASTRUCTURE_TEST_PROJECT_NAME%.csproj reference src\%INFRASTRUCTURE_PROJECT_NAME%\%INFRASTRUCTURE_PROJECT_NAME%.csproj
 dotnet add tests\%INTEGRATION_TEST_PROJECT_NAME%\%INTEGRATION_TEST_PROJECT_NAME%.csproj reference src\%API_PROJECT_NAME%\%API_PROJECT_NAME%.csproj
 
+:: Add nuget packages section
+:: Add Serilog packages (API layer)
+dotnet add %API_PROJECT_NAME% package Serilog
+dotnet add %API_PROJECT_NAME% package Serilog.AspNetCore
+dotnet add %API_PROJECT_NAME% package Serilog.Extensions.Logging
+dotnet add %API_PROJECT_NAME% package Serilog.Settings.Configuration
 
+
+:: Add Dapper package (Infrastructure layer)
+dotnet add "%INFRASTRUCTURE_PROJECT_NAME%" package Dapper
+
+:: Add EFCore package (Infrastructure layer)
+dotnet add "%INFRASTRUCTURE_PROJECT_NAME%" package Microsoft.EntityFrameworkCore
+
+:: Add EFCore.SqlServer package (Infrastructure layer)
+dotnet add "%INFRASTRUCTURE_PROJECT_NAME%" package Microsoft.EntityFrameworkCore.SqlServer
+
+:: Add Automapper package (Application layer)
+dotnet add %APPLICATION_PROJECT_NAME% package AutoMapper.Extensions.Microsoft.DependencyInjection
+
+:: MediatR (API and Application layers)
+:: dotnet add %API_PROJECT_NAME% package MediatR.Extensions.Microsoft.DependencyInjection
+:: FluentValidation.AspNetCore (Application)
+dotnet add %APPLICATION_PROJECT_NAME% packakge FluentValidation.AspNetCore
 
 :: Build the solution
 echo Building the solution...

@@ -41,7 +41,7 @@ dotnet sln add tests/%GATEWAY_TEST_PROJECT_NAME%/%GATEWAY_TEST_PROJECT_NAME%.csp
 
 :: Adding relevant packages to the Gateway project
 dotnet add src\%GATEWAY_PROJECT_NAME%\%GATEWAY_PROJECT_NAME%.csproj package Microsoft.AspNetCore.Authentication.JwtBearer --version 6.0.0
-dotnet add src\%GATEWAY_PROJECT_NAME%\%GATEWAY_PROJECT_NAME%.csproj package Ocelot
+dotnet add src\%GATEWAY_PROJECT_NAME%\%GATEWAY_PROJECT_NAME%.csproj package Ocelot --version 17.0.0
 :: (OPTIONAL) dotnet add GatewayProjectPath\GatewayProject.csproj package Ocelot.Provider.Consul
 
 

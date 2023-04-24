@@ -98,28 +98,30 @@ dotnet add tests\%INTEGRATION_TEST_PROJECT_NAME%\%INTEGRATION_TEST_PROJECT_NAME%
 
 :: Add nuget packages section
 :: Add Serilog packages (API layer)
-dotnet add %API_PROJECT_NAME% package Serilog
-dotnet add %API_PROJECT_NAME% package Serilog.AspNetCore
-dotnet add %API_PROJECT_NAME% package Serilog.Extensions.Logging
-dotnet add %API_PROJECT_NAME% package Serilog.Settings.Configuration
-
+echo Adding Serilog packages
+:: dotnet add %API_PROJECT_NAME% package Serilog
+dotnet add src\%API_PROJECT_NAME%\%API_PROJECT_NAME%.csproj package Serilog
+dotnet add src\%API_PROJECT_NAME%\%API_PROJECT_NAME%.csproj package Serilog.AspNetCore
+dotnet add src\%API_PROJECT_NAME%\%API_PROJECT_NAME%.csproj package Serilog.Extensions.Logging
+dotnet add src\%API_PROJECT_NAME%\%API_PROJECT_NAME%.csproj package Serilog.Settings.Configuration
 
 :: Add Dapper package (Infrastructure layer)
-dotnet add "%INFRASTRUCTURE_PROJECT_NAME%" package Dapper
+echo Adding Dapper nuget package
+dotnet add src\%INFRASTRUCTURE_PROJECT_NAME%\%INFRASTRUCTURE_PROJECT_NAME%.csproj package Dapper
 
 :: Add EFCore package (Infrastructure layer)
-dotnet add "%INFRASTRUCTURE_PROJECT_NAME%" package Microsoft.EntityFrameworkCore
+dotnet add src\%INFRASTRUCTURE_PROJECT_NAME%\%INFRASTRUCTURE_PROJECT_NAME%.csproj package Microsoft.EntityFrameworkCore
 
 :: Add EFCore.SqlServer package (Infrastructure layer)
-dotnet add "%INFRASTRUCTURE_PROJECT_NAME%" package Microsoft.EntityFrameworkCore.SqlServer
+dotnet add src\%INFRASTRUCTURE_PROJECT_NAME%\%INFRASTRUCTURE_PROJECT_NAME%.csproj package Microsoft.EntityFrameworkCore.SqlServer
 
 :: Add Automapper package (Application layer)
-dotnet add %APPLICATION_PROJECT_NAME% package AutoMapper.Extensions.Microsoft.DependencyInjection
+dotnet add src\%APPLICATION_PROJECT_NAME%\%APPLICATION_PROJECT_NAME%.csproj package AutoMapper.Extensions.Microsoft.DependencyInjection
 
 :: MediatR (API and Application layers)
 :: dotnet add %API_PROJECT_NAME% package MediatR.Extensions.Microsoft.DependencyInjection
 :: FluentValidation.AspNetCore (Application)
-dotnet add %APPLICATION_PROJECT_NAME% packakge FluentValidation.AspNetCore
+dotnet add src\%APPLICATION_PROJECT_NAME%\%APPLICATION_PROJECT_NAME%.csproj package FluentValidation.AspNetCore
 
 :: Build the solution
 echo Building the solution...

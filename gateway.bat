@@ -39,6 +39,12 @@ cd ../../
 dotnet new xunit -n %GATEWAY_TEST_PROJECT_NAME% -o tests/%GATEWAY_TEST_PROJECT_NAME%
 dotnet sln add tests/%GATEWAY_TEST_PROJECT_NAME%/%GATEWAY_TEST_PROJECT_NAME%.csproj
 
+:: Adding relevant packages to the Gateway project
+dotnet add src\%GATEWAY_PROJECT_NAME%\%GATEWAY_PROJECT_NAME%.csproj package Microsoft.AspNetCore.Authentication.JwtBearer --version 6.0.0
+dotnet add src\%GATEWAY_PROJECT_NAME%\%GATEWAY_PROJECT_NAME%.csproj package Ocelot
+:: (OPTIONAL) dotnet add GatewayProjectPath\GatewayProject.csproj package Ocelot.Provider.Consul
+
+
 :: Build the solution
 echo Building the solution...
 dotnet build %SOLUTION_NAME%.sln

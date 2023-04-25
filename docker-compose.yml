@@ -18,12 +18,12 @@ services:
     image: 'mcr.microsoft.com/mssql/server:2019-latest'
     container_name: alpha-industries-server-container
     environment:
-      SA_PASSWORD: 'areallystupidpassword321'
+      SA_PASSWORD: 'Ex@mpleP@ss1!'
       ACCEPT_EULA: 'Y'
     ports:
       - '1433:1433'
     volumes:
-      - db_data:/var/opt/mssql/data
+      - ./mssql/data:/var/opt/mssql/data
 
 volumes:
   db_data:

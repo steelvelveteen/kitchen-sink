@@ -29,9 +29,21 @@ md tests
 :: Create the solution
 dotnet new sln -n %SOLUTION_NAME%
 
+:: Create the Web API project
+dotnet new webapi -n %API_PROJECT_NAME% -o src/%API_PROJECT_NAME%
+dotnet sln add src/%API_PROJECT_NAME%\%API_PROJECT_NAME%.csproj
+
 :: Create the domain class library project
 dotnet new classlib -n %DOMAIN_PROJECT_NAME% -o src/%DOMAIN_PROJECT_NAME%
 dotnet sln add src/%DOMAIN_PROJECT_NAME%\%DOMAIN_PROJECT_NAME%.csproj
+
+:: Create the infrastructure class library project
+dotnet new classlib -n %INFRASTRUCTURE_PROJECT_NAME% -o src/%INFRASTRUCTURE_PROJECT_NAME%
+dotnet sln add src/%INFRASTRUCTURE_PROJECT_NAME%\%INFRASTRUCTURE_PROJECT_NAME%.csproj
+
+:: Create the application class library project
+dotnet new classlib -n %APPLICATION_PROJECT_NAME% -o src/%APPLICATION_PROJECT_NAME%
+dotnet sln add src/%APPLICATION_PROJECT_NAME%\%APPLICATION_PROJECT_NAME%.csproj
 
 :: Add relevant directories under the Domain project
 md src\%DOMAIN_PROJECT_NAME%\Entities
@@ -41,26 +53,12 @@ md src\%DOMAIN_PROJECT_NAME%\Events
 md src\%DOMAIN_PROJECT_NAME%\ValueObjects
 md src\%DOMAIN_PROJECT_NAME%\Exceptions
 
-:: Create the Web API project
-dotnet new webapi -n %API_PROJECT_NAME% -o src/%API_PROJECT_NAME%
-dotnet sln add src/%API_PROJECT_NAME%\%API_PROJECT_NAME%.csproj
-
-:: Create the infrastructure class library project
-dotnet new classlib -n %INFRASTRUCTURE_PROJECT_NAME% -o src/%INFRASTRUCTURE_PROJECT_NAME%
-dotnet sln add src/%INFRASTRUCTURE_PROJECT_NAME%\%INFRASTRUCTURE_PROJECT_NAME%.csproj
-
-
-:: Create the application class library project
-dotnet new classlib -n %APPLICATION_PROJECT_NAME% -o src/%APPLICATION_PROJECT_NAME%
-dotnet sln add src/%APPLICATION_PROJECT_NAME%\%APPLICATION_PROJECT_NAME%.csproj
-
 :: Add relevant directories under the Application project
 md src\%APPLICATION_PROJECT_NAME%\Common
 md src\%APPLICATION_PROJECT_NAME%\SampleDomain
 md src\%APPLICATION_PROJECT_NAME%\SampleDomain\Commands
 md src\%APPLICATION_PROJECT_NAME%\SampleDomain\Queries
 md src\%APPLICATION_PROJECT_NAME%\SampleDomain\EventHandlers
-
 
 :: Create the xUnit API test project
 dotnet new xunit -n %API_TEST_PROJECT_NAME% -o tests/%API_TEST_PROJECT_NAME%

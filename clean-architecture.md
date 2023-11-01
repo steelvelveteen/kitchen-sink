@@ -7,15 +7,19 @@
 3. Infrastructure Layer
 4. Presentation Layer or **API**
 
-**AlphaIndustries.Domain**: Contains the core business logic, entities, value objects, and domain interfaces. This layer is independent of any external dependencies and has no knowledge of other layers.
+### AlphaIndustries.Domain
+Contains the core business logic, entities, value objects, and domain interfaces. This layer is independent of any external dependencies and has no knowledge of other layers.
 
-**AlphaIndustries.Application**: Defines the use cases of the application, containing interfaces for services, application services, and data transfer objects (DTOs). It orchestrates the flow of data to and from the Domain Layer.
+### AlphaIndustries.Application
+Defines the use cases of the application, containing interfaces for services, application services, and data transfer objects (DTOs). It orchestrates the flow of data to and from the Domain Layer.
 
-**AlphaIndustries.Infrastructure**: Contains implementations of the interfaces defined in the Domain and Application layers. It manages external concerns like persistence, networking, and third-party libraries.
+### AlphaIndustries.Infrastructure
+Contains implementations of the interfaces defined in the Domain and Application layers. It manages external concerns like persistence, networking, and third-party libraries.
 
-**AlphaIndustries.API**: This is the Presentation Layer, where the API controllers, middleware, and extensions live. It communicates with the Application Layer to perform operations and return results.
+### AlphaIndustries.API
+This is the Presentation Layer, where the API controllers, middleware, and extensions live. It communicates with the Application Layer to perform operations and return results.
 
-**Layout of the structure:**
+**Structure layout**
 
 - AlphaIndustries.sln
   - src
